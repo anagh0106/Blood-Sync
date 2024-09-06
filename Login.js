@@ -14,3 +14,19 @@ function togglePasswordVisibility() {
     }
     console.log("clicked")
 }
+function togglePasswordVisibility1() {
+    const toggleIcon1 = document.getElementById("toggle-icon1");
+    const passField1 = document.getElementById("passwordField1");
+
+    if (passField1.type === 'password') {
+        passField1.type = 'text';
+        toggleIcon1.classList.remove('fa-eye');
+        toggleIcon1.classList.add('fa-eye-slash');
+    }
+    else {
+        passField1.type = 'password';
+        toggleIcon1.classList.remove('fa-eye-slash');
+        toggleIcon1.classList.add('fa-eye');
+    }
+    console.log("clicked")
+}

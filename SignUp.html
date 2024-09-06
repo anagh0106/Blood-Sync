@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Background Video -->
+    <video id="myVideo" autoplay muted loop>
+        <source src="/signinBloodsync.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <!-- Login Form Content -->
+    <div class="container vh-100 d-flex justify-content-center align-items-center text-center">
+
+        <div class="col-lg-6 d-flex justify-content-center align-items-center rightsection">
+            <div class="w-75 pt-5">
+                <h2 class="mb-4 text-center login-text pb-3">SignUp Here!</h2>
+                <form>
+                    <!-- Username Field -->
+                    <div class="wave-group p-2">
+                        <input required="" type="text" class="input">
+                        <span class="bar"></span>
+                        <label class="label">
+                            <span class="label-char" style="--index: 0">U</span>
+                            <span class="label-char" style="--index: 1">s</span>
+                            <span class="label-char" style="--index: 2">e</span>
+                            <span class="label-char" style="--index: 3">r</span>
+                            <span class="label-char" style="--index: 4">n</span>
+                            <span class="label-char" style="--index: 5">a</span>
+                            <span class="label-char" style="--index: 6">m</span>
+                            <span class="label-char" style="--index: 7">e</span>
+                        </label>
+                    </div><br>
+                    <!-- Email Field -->
+                    <div class="wave-group p-2">
+                        <input required="" type="text" class="input">
+                        <span class="bar"></span>
+                        <label class="label">
+                            <span class="label-char" style="--index: 0">E</span>
+                            <span class="label-char" style="--index: 1">M</span>
+                            <span class="label-char" style="--index: 2">a</span>
+                            <span class="label-char" style="--index: 3">i</span>
+                            <span class="label-char" style="--index: 4">l</span>
+                        </label>
+                    </div><br>
+                    <!-- Password Field -->
+                    <div class="wave-group p-2">
+                        <input required="" id="passwordField" type="password" class="input">
+                        <span class="bar"></span>
+                        <label class="label">
+                            <span class="label-char" style="--index: 0">P</span>
+                            <span class="label-char" style="--index: 1">a</span>
+                            <span class="label-char" style="--index: 2">s</span>
+                            <span class="label-char" style="--index: 3">s</span>
+                            <span class="label-char" style="--index: 4">w</span>
+                            <span class="label-char" style="--index: 4">o</span>
+                            <span class="label-char" style="--index: 4">r</span>
+                            <span class="label-char" style="--index: 4">d</span>
+                        </label>
+                        <span class="toggle-password" onclick="togglePasswordVisibility()">
+                            <i class="fas fa-eye" id="toggle-icon"></i>
+                        </span>
+                    </div><br>
+                    <!-- Confirm Password Field -->
+                    <div class="wave-group p-2">
+                        <input required="" id="passwordField1" type="password" class="input">
+                        <span class="bar"></span>
+                        <label class="label">
+                            <span class="label-char" style="--index: 0">C</span>
+                            <span class="label-char" style="--index: 1">o</span>
+                            <span class="label-char" style="--index: 2">n</span>
+                            <span class="label-char" style="--index: 3">f</span>
+                            <span class="label-char" style="--index: 4">i</span>
+                            <span class="label-char" style="--index: 5">r</span>
+                            <span class="label-char" style="--index: 6">m</span>&nbsp;
+                            <span class="label-char" style="--index: 7">P</span>
+                            <span class="label-char" style="--index: 8">a</span>
+                            <span class="label-char" style="--index: 9">s</span>
+                            <span class="label-char" style="--index: 10">s</span>
+                            <span class="label-char" style="--index: 11">w</span>
+                            <span class="label-char" style="--index: 12">o</span>
+                            <span class="label-char" style="--index: 13">r</span>
+                            <span class="label-char" style="--index: 14">d</span>
+                        </label>
+                        <span class="toggle-password" onclick="togglePasswordVisibility1()">
+                            <i class="fas fa-eye" id="toggle-icon1"></i>
+                        </span>
+                    </div>
+                    <input type="checkbox" class="check text-end">
+                    <span class="checkbox text-end">
+                        Remember Me
+                    </span>
+                    <br><button class="btn">SignUp</button>
+                </form><br><br>
+                <span class="signup d-block text-center fs-5">Already have an account? <a
+                        href="/Login.html">Login</a></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Login.js"></script>
+</body>
+
+</html>
