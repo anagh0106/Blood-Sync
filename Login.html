@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Background Video -->
+    <video id="myVideo" autoplay muted loop>
+        <source src="/signinBloodsync.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <!-- Login Form Content -->
+    <div class="container vh-100 d-flex justify-content-center align-items-center text-center">
+        <div class="col-lg-6 d-flex justify-content-center align-items-center rightsection">
+            <div class="w-75">
+                <h2 class="mb-4 text-center login pb-3">Login to your account</h2>
+                <form>
+                    <div class="wave-group p-2">
+                        <input required="" type="text" class="input">
+                        <span class="bar"></span>
+                        <label class="label">
+                            <span class="label-char" style="--index: 0">E</span>
+                            <span class="label-char" style="--index: 1">M</span>
+                            <span class="label-char" style="--index: 2">a</span>
+                            <span class="label-char" style="--index: 3">i</span>
+                            <span class="label-char" style="--index: 4">l</span>
+                        </label>
+                    </div><br>
+                    <div class="wave-group p-2">
+                        <input required="" id="passwordField" type="password" class="input">
+                        <span class="bar"></span>
+                        <label class="label">
+                            <span class="label-char" style="--index: 0">P</span>
+                            <span class="label-char" style="--index: 1">a</span>
+                            <span class="label-char" style="--index: 2">s</span>
+                            <span class="label-char" style="--index: 3">s</span>
+                            <span class="label-char" style="--index: 4">w</span>
+                            <span class="label-char" style="--index: 4">o</span>
+                            <span class="label-char" style="--index: 4">r</span>
+                            <span class="label-char" style="--index: 4">d</span>
+                        </label>
+                        <span class="toggle-password" onclick="togglePasswordVisibility()">
+                            <i class="fas fa-eye" id="toggle-icon"></i>
+                        </span>
+                    </div>
+                    <span class="forgotpass align-left">forgot password?</span>
+                    <br><button class="btn ">Login</button>
+                </form><br><br>
+                <span class="signup d-block text-center fs-5">Don't have an account? <a href="">Sign Up</a></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
